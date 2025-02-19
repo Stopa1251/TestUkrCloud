@@ -5,20 +5,10 @@ use PDO;
 
 class Database
 {
-    private $host = DB_HOST;
-    private $db = DATABASE;
-    private $user = DB_USER;
-    private $pass = DB_PASSWORD;
-    private $pdo;
     protected static PDO $instance;
 
     public function __construct()
     {
-//        $dsn = "mysql:host={$this->host};dbname={$this->db}";
-//
-//        $this->pdo = new PDO($dsn, $this->user, $this->pass);
-//        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
         self::connect();
 
     }
