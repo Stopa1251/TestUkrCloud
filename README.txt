@@ -2,7 +2,7 @@
 composer install
 docker exec 'docker_container_name' vendor/bin/phinx migrate -e development
 
-Потрібно допрацювати маршрутизацію.
+http://localhost:9003 - homePage не прописаний
 
 1. Папка View суто для дебагу.
 2. Маршрутизація примітивна, потім її зміню. (src/config/router.php)
